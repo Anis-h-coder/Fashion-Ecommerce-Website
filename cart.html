@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <input type="text" placeholder="Search...">
+        <div class="icons">
+            <span class="user-icon">👤</span>
+            <span class="cart-icon">🛒</span>
+            <span class="settings-icon">⚙</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="shopping-bag">
+            <h2>Shopping Bag</h2>
+            <p id="item-count">0 items in your bag</p>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically injected here -->
+            </div>
+        </div>
+
+        <aside>
+            <div class="calculated-shipping">
+                <h3>Calculated Shipping</h3>
+                <select>
+                    <option>Country</option>
+                </select>
+                <select>
+                    <option>State / City</option>
+                </select>
+                <input type="text" placeholder="ZIP Code">
+                <button>Update</button>
+            </div>
+
+            <div class="coupon">
+                <h3>Coupon Code</h3>
+                <input type="text" placeholder="Enter Coupon Code">
+                <button>Apply</button>
+            </div>
+
+            <div class="cart-total">
+                <p>Cart Subtotal: <span id="cart-subtotal">$0.00</span></p>
+                <p>Discount: <span id="discount">-$0.00</span></p>
+                <p>Cart Total: <span id="cart-total">$0.00</span></p>
+                <button>Checkout</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="custom-footer">
+        <div class="footer-item">
+          <img src="free.png" alt="Free Shipping">
+          <div>
+            <h4>Free Shipping</h4>
+            <p>When you spend $50+</p>
+          </div>
+        </div>
+        <div class="footer-item">
+          <img src="call.jpg" alt="Call Us">
+          <div>
+            <h4>Call Us Anytime</h4>
+            <p>+34 555 5555</p>
+          </div>
+        </div>
+        <div class="footer-item">
+          <img src="chat.jpg" alt="Chat With Us">
+          <div>
+            <h4>Chat With Us</h4>
+            <p>We offer 24-hour chat support</p>
+          </div>
+        </div>
+        <div class="footer-item">
+          <img src="gift.avif" alt="Gift Cards">
+          <div>
+            <h4>Gift Cards</h4>
+            <p>For your loved one, in any amount</p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
